@@ -1,13 +1,13 @@
 ---
 description:
 ---
-
+<hr>
 <ul class="tag_box inline">
 {{# categories }}
   {{> categories_list }}
 {{/ categories }}
 </ul>
-
+<div class="tags">
 {{# categories }}
   <h2>{{ name }} ({{ count }})</h2>
   <ul>
@@ -16,3 +16,4 @@ description:
     {{/ posts?to_posts }}
   </ul>
 {{/ categories }}
+</div>

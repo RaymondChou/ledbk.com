@@ -1,11 +1,3 @@
-/*
-Theme Name: Wiretree - Responsive HTML5 Template
-Theme URI: http://themes.iki-bir.com/wiretree
-Author: elemis
-Author URI: http://iki-bir.com
-Version: 1.0
-*/
-
 /*-----------------------------------------------------------------------------------*/
 /*	RESET
 /*-----------------------------------------------------------------------------------*/
@@ -505,6 +497,9 @@ footer .inner {
 }
 .subfooter .inner {
     padding: 25px 50px
+}
+.subfooter .inner a{
+    color: #ca6666;
 }
 .top-wrapper .intro {
     margin-top: 31px
@@ -2881,4 +2876,58 @@ ul li a span{
     top: -3px;
     border: 2px solid white;
     box-shadow: -1px 1px 2px #333;
+}
+.archive hr{
+    margin-bottom: 0;
+}
+.archive h2{
+    padding-top: 20px;
+}
+.archive h3{
+     font-size: 20px;
+     padding-left: 15px;
+ }
+.archive ul{
+    font-size: 16px;
+    padding-left: 30px;
+}
+.archive ul li::before {
+    font-family: 'fontello';
+    content: "\2713";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 12px;
+    padding-right: 8px;
+    color: #CA6666;
+}
+.tag_box{
+    display: inline-block;
+}
+.tag_box li{
+    float: left;
+    margin-right: 20px;
+    line-height: 30px;
+}
+.tags h2{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.tags li{
+    list-style: none;
+    padding-left: 20px;
+}
+.tags li::before {
+    font-family: 'fontello';
+    content: "\2713";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 12px;
+    padding-right: 8px;
+    color: #CA6666;
 }
