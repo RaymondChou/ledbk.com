@@ -1,4 +1,4 @@
-Visit http://github.com/wendal/gor
+Visit my Blog http://ledbk.com
 
 ## License
 
