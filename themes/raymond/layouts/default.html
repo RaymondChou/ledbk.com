@@ -15,6 +15,7 @@
 
     <!-- Le styles -->
     <link href="/assets/raymond/stylesheets/raymond.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="/assets/raymond/stylesheets/fontello.css">
     <link href="/assets/raymond/widgets/google_prettify/stylesheets/twitter-bootstrap.css" type="text/css"
           rel="stylesheet" media="all">
 
@@ -33,7 +34,7 @@
         <div class="inner">
             <!-- Begin Header -->
             <header>
-                <div class="logo"><a href="/"><img src="style/images/logo.png" alt=""/></a></div>
+                <div class="logo"><a href="/"><img src="/assets/raymond/media/logo.png" alt=""/></a></div>
                 <!-- Begin Menu -->
                 <nav id="menu" class="menu">
                     <ul id="tiny">
@@ -140,6 +141,13 @@
 </script>
 
 
-{{{ google_prettify }}}
+<script src="/assets/raymond/javascripts/prettify.js"></script>
+<script>
+    var pres = document.getElementsByTagName("pre");
+    for (var i=0; i < pres.length; ++i) {
+        pres[i].className = "prettyprint ";
+    }
+    prettyPrint();
+</script>
 </body>
 </html>

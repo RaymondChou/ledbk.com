@@ -1,25 +1,37 @@
 ---
-title: 首页
+title: RaymondChou's Blog
 description:
 ---
-
-<h2>Gor已经为了编译成功了</h2>
-<p>
-  这段文字位于pages/index.html ,使用以下命令获取帮助或访问gor官网
-</p>
-<pre><code>$ gor help</code></pre>
-
-
-<h2>最近更新</h2>
-
+<hr>
+<section class="content full">
 {{# posts_latest }}
 <div class="post">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
-
-  {{{ summary }}}
-
-  <div class="more">
-    <a href="{{url}}" class="btn">read more..</a>
-  </div>
+    <div class="post-content">
+        <h2><a href="{{url}}">{{title}}</a></h2>
+        <div class="meta"> <span class="date">{{ date }}</span> <span class="tags"><a href="#">tips</a>, <a href="#">tricks</a></span> <span class="comments"><a href="#">3 Comments</a></span> </div>
+        {{{ summary }}}
+        <a href="{{url}}" class="more">Continue reading →</a> </div>
+    <div class="clear"></div>
 </div>
 {{/ posts_latest }}
+</section>
+
+<!-- Begin Sidebar -->
+<aside class="sidebar">
+    
+    <div class="sidebox widget">
+        <h3>Search</h3>
+
+        <form class="searchform" method="get">
+            <input type="text" id="s2" name="s" value="type and hit enter" onfocus="this.value=''"
+                   onblur="this.value='type and hit enter'"/>
+        </form>
+    </div>
+    <div class="sidebox widget">
+        <h3>Sina Weibo</h3>
+
+        <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1751716711&verifier=6bf885be&colors=d6f3f7,ffffff,616161,CA6666,ffffff&dpc=1"></iframe>
+    </div>
+
+</aside>
+<!-- End Sidebar -->

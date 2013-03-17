@@ -37,37 +37,30 @@ layout : default
 <!-- Begin Sidebar -->
 <aside class="sidebar">
     <div class="sidebox widget">
-        <h4>Published</h4>
+        <h3>Published</h3>
 
-        <div class="date"><span>{{ page.date }}</span></div>
-        <br>
-        <h4>Categories</h4>
-        <ul class="tag_box">
+        <div class="date"><span class="lite1">{{ page.date }}</span></div>
+
+    </div>
+
+    <div class="sidebox widget">
+        <h3>Categories</h3>
+        <ul class="list">
             {{# page.categories?to_categories }}
             {{> categories_list }}
             {{/ page.categories?to_categories }}
         </ul>
-        <br>
-        <h4>Tags</h4>
-        <ul class="tag_box">
+    </div>
+
+    <div class="sidebox widget">
+        <h3>Tags</h3>
+        <ul class="list">
             {{# page.tags?to_tags }}
             {{> tags_list }}
             {{/ page.tags?to_tags }}
         </ul>
-        <h3>Popular Posts</h3>
-        <ul class="post-list">
-            <li>
-                <h6><a href="blog-post.html">Vivamus sagittis lacus vel augue metus laoreet rutrum dolor auctor.</a>
-                </h6>
-                <em>3th Oct 2012</em></li>
-            <li>
-                <h6><a href="blog-post.html">Scelerisque nisl consectetur et.</a></h6>
-                <em>28th Sep 2012</em></li>
-            <li>
-                <h6><a href="blog-post.html">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a></h6>
-                <em>15th Aug 2012</em></li>
-        </ul>
     </div>
+
     <div class="sidebox widget">
         <h3>Search</h3>
 
@@ -77,22 +70,10 @@ layout : default
         </form>
     </div>
     <div class="sidebox widget">
-        <h3>Custom Text</h3>
+        <h3>Sina Weibo</h3>
 
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed
-            consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1751716711&verifier=6bf885be&colors=d6f3f7,ffffff,616161,CA6666,ffffff&dpc=1"></iframe>
+    </div>
 
-        <p>Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue. Fusce mauris condimentum.</p>
-    </div>
-    <div class="sidebox widget">
-        <h3>Categories</h3>
-        <ul class="list">
-            <li><a href="#">Web Design</a> (21)</li>
-            <li><a href="#">Photography</a> (19)</li>
-            <li><a href="#">Graphic Design</a> (16)</li>
-            <li><a href="#">Manipulation</a> (15)</li>
-            <li><a href="#">Motion Graphics</a> (12)</li>
-        </ul>
-    </div>
 </aside>
 <!-- End Sidebar -->

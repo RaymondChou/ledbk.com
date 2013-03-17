@@ -404,6 +404,7 @@ pre {
     clear: both;
     background: #f7f7f7;
     border: 1px solid #e7e7e7;
+    word-wrap: break-word;
 }
 /*-----------------------------------------------------------------------------------*/
 /*	STUCTURE
@@ -2865,3 +2866,19 @@ ul.retina-icons li span {
         margin-right: 3px;
     }
 } /* END Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+
+/*add*/
+ul li a span{
+    background: #FF807D;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    font-weight: bold;
+    padding: 0px 4px;
+    left: 2px;
+    top: -3px;
+    border: 2px solid white;
+    box-shadow: -1px 1px 2px #333;
+}
