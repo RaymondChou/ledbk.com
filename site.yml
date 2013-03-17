@@ -1,0 +1,16 @@
+title : Blog Title
+tagline: Blog Tagline
+author :
+  name : RaymondChou
+  email : freezestart@gmail.com
+  github : RaymondChou
+  twitter : username
+  feedburner : feedname
+
+navigation :
+  - archive.html
+  - tags.html
+  - categories.html
+  - pages.html
+  - about.md
+  

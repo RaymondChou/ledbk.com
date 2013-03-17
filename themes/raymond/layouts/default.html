@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {{# page.description }}
+    <meta name="description" content="{{ . }}">
+    {{/ page.description }}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/raymond/stylesheets/raymond.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/assets/raymond/widgets/google_prettify/stylesheets/twitter-bootstrap.css" type="text/css"
+          rel="stylesheet" media="all">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/raymond/media/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/raymond/media/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/raymond/media/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/raymond/media/apple-touch-icon-114x114.png">
+</head>
+
+<body class="full-layout">
+
+<div class="body-wrapper">
+    <!-- Begin Top Wrapper -->
+    <div class="top-wrapper">
+        <div class="inner">
+            <!-- Begin Header -->
+            <header>
+                <div class="logo"><a href="/"><img src="style/images/logo.png" alt=""/></a></div>
+                <!-- Begin Menu -->
+                <nav id="menu" class="menu">
+                    <ul id="tiny">
+                        {{# site.navigation?to_pages }}
+                        {{> pages_list }}
+                        {{/ site.navigation?to_pages }}
+                    </ul>
+                </nav>
+                <!-- End Menu -->
+                <div class="clear"></div>
+            </header>
+            <!-- End Header -->
+
+        </div>
+    </div>
+    <!-- End Top Wrapper -->
+    <!-- Begin Wrapper -->
+    <div class="wrapper">
+        <div class="inner light">
+            {{{ content }}}
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- End Wrapper -->
+
+    <!-- Begin Footer Wrapper -->
+    <footer>
+        <!-- Begin Inner -->
+        <div class="inner">
+            <div class="one-fourth widget">
+                <h3 class="widget-title">Popular Posts</h3>
+                <ul class="post-list">
+                    <li>
+                        <h6><a href="blog-post.html">Vivamus sagittis lacus vel augue metus laoreet rutrum dolor
+                            auctor.</a></h6>
+                        <em>3th Oct 2012</em></li>
+                    <li>
+                        <h6><a href="blog-post.html">Scelerisque nisl consectetur et.</a></h6>
+                        <em>28th Sep 2012</em></li>
+                    <li>
+                        <h6><a href="blog-post.html">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a></h6>
+                        <em>15th Aug 2012</em></li>
+                </ul>
+            </div>
+            <div class="one-fourth widget">
+                <h3 class="widget-title">Twitter</h3>
+
+                <div id="twitter-wrapper">
+                    <div id="twitter"></div>
+                </div>
+            </div>
+            <div class="one-fourth widget">
+                <h3 class="widget-title">A Little About Us</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi
+                    erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nullam
+                    quis risus eget urna.</p>
+
+                <p>Donec id elit non porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel.</p>
+            </div>
+            <div class="one-fourth last widget">
+                <h3 class="widget-title">Get In Touch</h3>
+
+                <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada
+                    magna. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur.</p>
+                <i class="icon-location contact"></i> Moon St. 14/05 Light, Jupiter <br/>
+                <i class="icon-phone contact"></i> 0247 541 65 87 <br/>
+                <i class="icon-mail contact"></i> <a href="mailto:support@wiretree.com">support@wiretree.com</a></div>
+            <div class="clear"></div>
+        </div>
+        <!-- Begin Inner -->
+    </footer>
+    <!-- End Footer Wrapper -->
+
+    <!-- Begin Sub Footer Wrapper -->
+    <div class="subfooter">
+        <!-- Begin Inner -->
+        <div class="inner">
+            <p>&copy; {{ site.author.name }} 2013
+                with help from <a href="http://github.com/wendal/gor" target="_blank" title="Gor -- Fast Blog">Gor</a>
+                and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+                and Idea from <a href="http://ruhoh.com" target="_blank"
+                                 title="The Definitive Technical Blogging Framework">ruhoh</a></p>
+            <ul class="social">
+                <li><a href="#"><i class="icon-s-rss"></i></a></li>
+                <li><a href="#"><i class="icon-s-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-s-facebook"></i></a></li>
+                <li><a href="#"><i class="icon-s-dribbble"></i></a></li>
+                <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
+                <li><a href="#"><i class="icon-s-flickr"></i></a></li>
+                <li><a href="#"><i class="icon-s-vimeo"></i></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <!-- Begin Inner -->
+    </div>
+    <!-- End Sub Footer Wrapper -->
+</div>
+
+<!-- baidu tongji -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe8196f1ded92193982aa9839d8e98d0d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+{{{ google_prettify }}}
+</body>
+</html>
