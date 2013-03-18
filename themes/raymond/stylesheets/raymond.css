@@ -2033,9 +2033,9 @@ ul.latest li .text p {
     margin: 0 0 3px 0;
     font-size: 22px;
 }
-.post h2 a {
+/*.post h2 a {
     color: #616161
-}
+}*/
 .post h2 a:hover {
     color: #ca6666
 }
